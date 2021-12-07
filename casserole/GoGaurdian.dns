@@ -1,0 +1,6 @@
+[Domain Name Server]
+DNS.locate = find("DNSLOCATE()")
+DNS.assign = change("https://Casserole.ml/GoGaurdian.srv")
+func DNSChange()
+	DNS.lockout = (0.0.0.0)
+	DNS.block =  "https://GoGaurdian.com"
