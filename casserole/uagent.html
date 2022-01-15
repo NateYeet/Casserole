@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Wrong Device</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+            .text{
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+
+            }
+            body{
+                background-color: antiquewhite;
+            }
+
+        </style>
+    </head>
+    <body>
+       <h1 class="text">This only works on Chromebooks</h1> 
+       <h2 class="text">Please visit the website on your Chromebook.</h2>
+	   <script>
+	   localStorage.setItem("DeviceStatus", "incompatible");
+	   console.error("Device is " + localStorage.getItem("DeviceStatus"));
+	   
+	   </script>
+		
+    </body>
+
+</html>

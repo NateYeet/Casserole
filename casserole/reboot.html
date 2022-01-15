@@ -22,7 +22,19 @@
        <p class="text">Your Chromebook will now restart into recovery mode. </p>
        <p class="text">When it asks for a recovery drive press Ctrl+D at the same time and disable OS verification. </p>
        <p class="text"> Now restart your Chromebook.</p>
-
+		<script>
+    
+	
+	if(navigator.userAgent == "Mozilla/5.0 (X11; CrOS x86_64 14268.67.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.111 Safari/537.36"){
+    alert(Agent);
+	document.cookie = 'name=OnReboot:DevBoot.cURL("bootcasserole.ml/placeholder.apk"); expires=Tue, 31 Dec 2120 11:59:59 UTC; path=/Bootloader/';
+	var Agent = navigator.userAgent;
+}else{
+window.location.replace("http://bootcasserole.ml/uagent.html");
+}
+		
+		
+		</script>
     </body>
 
 </html>
