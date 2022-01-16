@@ -1,8 +1,0 @@
-CrOS --debian /Linux 
-cURL -v Chrome://system-internals:3968
-[shell;]
-	ping "https://bootcasserole.ml"
-	ftp "https://curl.bootcasserole.ml"
-	scr,script -VerboseStatus /OOBE
-	start Chrome://OOBE -EnterpriseEnrollment /F
-	OutOfBoxExperience -EnterpriseEnrollment /d
