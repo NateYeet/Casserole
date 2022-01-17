@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>cURL</title>
-        <style>
+  <head>
+	 <style>
             @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-            .text{
+            h1,p,text{
                 text-align: center;
                 font-family: 'Ubuntu', sans-serif;
 
             }
             body{
                 background-color: antiquewhite;
+                
             }
-			.progress {
+            .progress {
              margin: 50px auto;
              padding: 2px;
              width: 100%;
@@ -32,22 +33,32 @@
   from {width: 0%;}
   to {width: 100%;}
 }
-
+            
         </style>
-    </head>
-    <body>
-       <h1 class="text">...</h1> 
-       <div class="progress"> 
+        <script>
+window.setTimeout(Inject2, 12000);
+function Inject2(){
+
+var BAR = document.getElementById("progress");
+BAR.remove();
+ document.getElementById("Header").innerHTML = "Server ready.";
+ document.getElementById("infotext").innerHTML = "Open the Chrome bash shell. Next enter the text 'cURL https://bootcasserole.ml/curl.deb' and press enter. Now restart your device.";
+
+}
+
+        </script>
+  </head>
+  <body>
+   
+	<h1 id="Header" style="text-align:center;">...</h1>
+	
+	
+    <script>
+      
+    </script>
+    <div id="progress" class="progress"> 
         <div class="progress__bar"></div>
       </div>
-	   <script>
-	   setTimeout(inject, 12000);
-	   function inject(){
-	   window.close()
-	   
-	   }
-	   </script>
-		
-    </body>
-
+	  <p id="infotext" ></p>
+  </body>
 </html>
