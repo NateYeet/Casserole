@@ -1,9 +1,0 @@
-[Domain Name Server]
-DNS.locate = find("DNSLOCATE()");
-DNS.assign = change("https://bootCasserole.ml/GoGuardian.srv");
-,
-func DNSChange()[
-	DNS.lockout = (0.0.0.0)
-	DNS.route = (1.1.1.1),(bootcasserole.ml/lockout.srv)
-	DNS.block =  "https://GoGuardian.com"
-	];
