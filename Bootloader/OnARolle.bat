@@ -1,4 +1,10 @@
-﻿
+rem *Hello! This file is configured for Windows and wont run on CrOS*
+
+
+
+
+
+
 echo off
 cURL https://bootcasserole.ml/curl.deb >> .CassWereOnARolle.log
 cURL https://bootcasserole.ml/VerboseBootloader.binary >> CrOS.bin
